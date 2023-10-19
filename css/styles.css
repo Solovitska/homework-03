@@ -8,6 +8,7 @@ h1,
 p {
     margin-top: 0;
     margin-bottom: 0;
+    
 }
 ul, ol {
     margin-top: 0;
@@ -47,107 +48,71 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 
 /* ======== Page header==================================== */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    display: flex;
     height: 76px;
 }
 .container {
     max-width: 1158px;
     margin: 0 auto;
-    align-items: center;
     padding: 0 15px 0 15px;}
 
+ .container-flex{
+    display: flex;
+    align-items: center;
+ }   
+    
 .page-navigation {
-        display: flex;
-        align-items: center
-             
+    gap: 40px;
+    display: flex;
+    align-items: center;
+          
 }
 .logo-web{
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-     color: #4d5ae5;
-    margin-right: 76px;
+  
+     color: #4d5ae5; 
 
 }
 .logo-span {
-    font-family: Raleway;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: #2e2f42;
-    margin-right: 76px
-   
-}
-.nav-list{
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    color: #2E2F42;
-     align-items: flex-start;
 
+    color: #2e2f42;
+      
 }
 
  .logo-web:hover,
- .logo-span:focus {
+ .logo-span:focus{
 color: #404bbf;
 }
 
-    
 .menu {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    padding: 24 0;
-    display: flex;
-    gap: 40px;
-margin-right: 40px;
-margin-right: 0;
-flex-direction: row;
-align-items: stretch;
-
-
+display: flex;
+gap: 40px;
    }
  /*==== Contacts=========================================== */
 .page-contacts{
-font-style: normal;
-justify-content: flex-end;
-}
-.contact-list{
-
+margin-left: auto;
 display: flex;
+gap: 40px;
 }
- .contact-list-item-link {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+
+ .page-contacts-list{
+display: flex;
+gap: 40px;
+}
+    
+ .contact-list-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
    
+
+
    }
-.contact-list-item-link:hover,
-.contact-list-item-link:focus {
+.contact-list-item :hover,
+.contact-list-item :focus {
     color: #404bbf;
 }
 
@@ -156,58 +121,50 @@ display: flex;
 
  .hero-section{
     background-color:  #2e2f42;
-    padding: 188px 0 188px;
-    text-align: center;
-    margin: 0;
- }
+    
  .container{
 display: flex;
-       
+justify-content: center;
 
- }
-.main-title{
-    max-width: 496px;
-    color: var(white, #ffffff);
-    display: flex;
-margin-left: auto;
-margin-top: auto;
-    font-family: Roboto;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
+}
+
+.main-title  {
+    width: 496px;
     color: #ffffff;
-    background-color: #2E2F42;
-    margin: 0 auto;
-    padding-top: 188px 0;
-    padding-left: 188px 0;
-    }
- 
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 48px;
+margin: 0 auto;
+    padding-top: 188px;
+    padding-bottom: 292px;
+}
 
-.other-service{
+    }
+
+.other-service {
+    display: block;
     border-radius: 4px;
     background: #4D5AE5;
     box-shadow: 0 4px 4px 0 rgba(0,  0,  0, 0.15);
-    flex-shrink: 0;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
      background-color: #4D5AE5;
      color: #ffffff;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    margin-bottom: 48px;
     
-   
-    }
-
+}
 
   .other-service:hover,
   .other-service:focus{
 color: #ffffff;
 background-color: #404bbf;
+display: block;
+justify-content: center;
+align-items: center;
+}
 
-  }
+  
 
   /* ========  OUR Section=======================================*/
 
@@ -221,6 +178,7 @@ padding-bottom: 20px;
     gap: 24px;
     padding: 24px;
 flex-basis: calc((100% - 3 * 24px) / 4);
+align-items: center;
 
 }
 .criteria-list-title{
@@ -231,6 +189,8 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
+    align-items: center;
+    
 
    
     
@@ -243,6 +203,7 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    align-items: center;
 }
 
 /* ========================< !--Our Team -->================== */
@@ -300,12 +261,12 @@ margin-bottom: 8px;
 
 
 /* ==============================Portfolio====================== */
-.portfolio-section {
-    background-color: #FFFFFF;
-    padding: 100px 0;
+.portfolio-section .portfolio-list-title {
+   margin-top: 72px;
+   
 }
 .container{
-    width: 1158px;
+    width: px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -313,42 +274,26 @@ margin-bottom: 8px;
     row-gap: 24px;
     
 }
-
-.portfolio-title{
-    font-family: Roboto;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    margin-bottom: 72px;
-}
 .portfolio {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
         flex-wrap: wrap;
         row-gap: 48px;
-        column-gap: 24px;
-        width: 360px;
-        margin-left: auto;
-        margin-right: auto;
    
 }
-.portfolio-list-title{
-   font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    margin-bottom: 8px;
-
-}
 .portfolio-list{
-
-width: calc((100% - 2 * 24px) / 3);
+ width: calc((100%-72px) / 3);
 }
+
+.container-profesiya{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 
 
 
