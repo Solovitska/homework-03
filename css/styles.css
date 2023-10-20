@@ -14,6 +14,7 @@ ul, ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 
@@ -22,8 +23,7 @@ img {
 }
 button {
     cursor: pointer;
-    display: block;
-        background-color: #4d5ae5;
+    
         
 }
 .list {
@@ -54,7 +54,7 @@ body {
 /* ======== Page header==================================== */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    height: 76px;
+   
 }
 .container {
     max-width: 1158px;
@@ -73,6 +73,7 @@ body {
           
 }
 .logo-web{
+    margin-right: 76px;
   
      color: #4d5ae5; 
 
@@ -102,6 +103,7 @@ gap: 40px;
  .page-contacts-list{
 display: flex;
 gap: 40px;
+
 }
     
  .contact-list-item {
@@ -120,12 +122,10 @@ gap: 40px;
  /* ==============HERO SECTION =============================== */ 
 
  .hero-section{
-background-color:  #2e2f42;
-display: flex;
-align-items: center;
-
+background:  #2e2f42;
+padding-top: 188px;
+  padding-bottom: 188px;
 }
-
 .main-title  {
     max-width: 496px;
     color: #ffffff;
@@ -133,25 +133,23 @@ align-items: center;
     text-align:center;
     font-size: 56px;
     font-weight:700;
+    line-height: 1.07;
     margin: 0;
    margin-bottom: 48px;
-    padding-top: 188px;
-    padding-bottom: 292px;
+
 }
 .other-service {
-    min-width: 169px;
+    
     margin:  auto;
     padding: 16px 32px 16px 32px;
-    gap: 10px;
-    border-radius: 4px;
     text-align: center;
-    display: block;
-    
-
-    
+ 
     
 }
 .button{
+    display: block;
+    min-width: 169px;
+    height: 56px;
     font-size: 16px;
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -159,15 +157,12 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    display: block;
-    margin: auto;
-    margin-bottom: 48px;
+    border: none;
+    background-color: #4d5ae5;
     border-radius: 4px;
-
-    
-    
+    cursor: pointer;
+    margin:  auto; 
 }
-
   .other-service:hover,
   .other-service:focus{
 color: #ffffff;
@@ -175,33 +170,29 @@ background-color: #404bbf;
 
 }
 
-  
-
   /* ========  OUR Section=======================================*/
 
-.container{
-padding-top: 20px;
-padding-bottom: 20px;
-align-items: center;
+.team-section{
+    padding: 120px 0;
+    background: #ffffff;
 }
 .list{
    display: contents;
     gap: 24px;
-    padding: 24px;
-flex-basis: calc((100% - 3 * 24px) / 4);
-
+  
+    }
+.criteria-list-item{
+    width: calc((100% - 72px) / 4);
 }
+
 .criteria-list-title{
-    font-family: Roboto;
+
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-    align-items: center;
-    padding-top: 56px;
-
     
 }
 .text {
@@ -212,103 +203,116 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     letter-spacing: 0.02em;
     color: #434455;
     align-items: flex-start;
-    padding-bottom: 60px;
+
 }
 
 /* ========================< !--Our Team -->================== */
-.container{
-  padding: 32px 0; 
-}
 
 
 .team-section{
+padding: 120px 0 120px;
 background-color: #F4F4FD;
-padding: 120px 0;
 
 }
 .section-title{
-    font-family: Roboto;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    background-color: #F4F4FD;
-    color: #2E2F42;
-    margin-bottom: 72px;
+text-align: center;
+justify-content: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+margin-bottom: 72px;
+color: #2E2F42;
+
+
 }
-.team-section{
+.team-section {
     display: flex;
     gap: 24px;
 }
 .team-section-list-item{
-background-color: #FFFFFF;
-flex-basis: calc((100% - 3 * 24px) / 4);
+width: calc((100% - 72px) / 4);
 border-radius: 0px 0px 4px 4px;
+background-color: #ffffff;
+margin-right: 24px;
+margin-right: 0; }
 
-
+.first-name{
+ padding: 32px 0;
 }
-.container-profesiya{
-padding: 32px 16px;
-border: 1px solid #e7e9fc;
-border-top: none;
+    
+.team-section-list-title{
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2E2F42;
+background-color: #FFFFFF;
+text-align: center;
 margin-bottom: 8px;
 }
-.team-section-list-title{
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+.text-section{
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
-    background-color: #FFFFFF;
     text-align: center;
-    margin-bottom: 8px
-}
+    color: #434455;  
 
+}
 
 
 /* ==============================Portfolio====================== */
-.portfolio-section .portfolio-list-title {
+.portfolio-section  {
    margin-top: 72px;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   background: #ffffff;
+}
+.portfolio-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+    color: #2e2f42; }  
    
-}
-.container{
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    column-gap: 48px;
-    row-gap: 24px;
-    justify-content: space-between;
-}
-.portfolio {
+.portfolio{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
     column-gap: 24px;
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-   
+    row-gap: 48px;   
 }
 .portfolio-list{
- width: calc((100%-72px) / 3);
+ width: calc((100%-48px) / 3);
 }
 
 .container-profesiya{
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    margin-bottom: 8px;
 }
+.portfolio-list-title{
+font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: #2e2f42; }
 
+.text-portfolio{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455; 
+}
 
 /* =================================Footer============================== */
 .page-footer{
      background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border-right: 4px;
+     padding: 100px 0 100px;
 }
 .page-footer-list{
     font-family: Raleway, sans-serif;
@@ -320,6 +324,7 @@ margin-bottom: 8px;
     color: #4D5AE5;
     background-color: #2E2F42;
     margin-bottom: 16px;
+    display: inline-block;
 }
 .logo-title-studio{
 font-family: Raleway;
@@ -329,24 +334,14 @@ font-family: Raleway;
     letter-spacing: 0.03em;
     color: #F4F4FD;
     background-color: #2E2F42;
-display: inline-block;
-    margin-bottom: 16px;
-
 
 }
 .text-footer-paragraphe{
-   font-family: Roboto;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 1.5;
-   letter-spacing: 0.02em;
-   color: #F4F4FD;
-   max-width: 264px;
-padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: 8px;
-}
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;}
 
 
 
