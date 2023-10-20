@@ -269,12 +269,10 @@ margin-bottom: 8px;
 
 /* ==============================Portfolio====================== */
 .portfolio-section  {
-   margin-top: 72px;
    padding-top: 120px;
    padding-bottom: 120px;
    background: #ffffff;
-   padding: 32px 16px;
-   border: 1px solid #e7e9fc;
+  
 }
 .portfolio-title {
     font-size: 36px;
@@ -304,8 +302,8 @@ font-size: 20px;
     margin-bottom: 8px;
     color: #2e2f42;
     margin-bottom: 72px; 
-    padding: 32px 16px;
     
+    margin-bottom: 8px
     
  }
 
@@ -317,7 +315,7 @@ font-size: 20px;
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px; 
-   
+    padding: 32px 16px;
 }
 
 /* =================================Footer============================== */
