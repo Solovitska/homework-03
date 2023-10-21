@@ -282,7 +282,7 @@ margin-bottom: 8px;
     color: #2e2f42;  
     margin-bottom: 72px; 
     text-align: center;
-    margin-bottom: 8px;
+
 
 }  
 
@@ -296,7 +296,7 @@ margin-bottom: 8px;
 .portfolio-list{
     width: calc((100%-(2*(3*24px))) / 6);}
 
-.portfolio-list-title .text-portfolio{
+.portfolio-list-title{
 font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
